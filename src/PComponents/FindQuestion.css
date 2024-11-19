@@ -1,0 +1,64 @@
+
+.find-container {
+    margin-top: 30px;
+    margin:auto;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size:xx-large;
+    max-width: 800px;
+  }
+
+  .filter-input {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  font-size: large;
+    box-sizing: border-box;
+  }
+  .filter-dropdown
+  {
+    font-size: large;
+  }
+  .question-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+  }
+  
+  .question-card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #444;
+  }
+  
+  .question-card p {
+    margin: 10px 0;
+  }
+  
+  .question-card span {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  .question-card button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .question-card button:hover {
+    background-color: #c9302c;
+  }
+  

@@ -1,0 +1,30 @@
+/* Styling for the PostNav component */
+nav {
+    display: flex;
+    justify-content: center;  /* Center the links */
+    align-items: center;      /* Align the links vertically */
+    gap: 20px;  
+    font-size: 16px;              /* Add space between the links */
+    background-color: #333;   /* Dark background */
+    padding: 15px; 
+    margin-top: 10px; 
+    margin-bottom: 10px;          /* Add padding around the nav */
+  }
+  
+  nav a {
+    text-decoration: none;    /* Remove underline from links */
+    color: white;             /* White text color */
+    font-size: 18px;          /* Set font size */
+    padding: 8px 16px;        /* Add padding inside the link */
+    border-radius: 5px;       /* Rounded corners for the buttons */
+    transition: background-color 0.3s ease;  /* Smooth transition effect */
+  }
+  
+  nav a:hover {
+    background-color: #555;   /* Darker background on hover */
+  }
+  
+  nav a.active {
+    background-color: #007bff; /* Highlight active link */
+  }
+  

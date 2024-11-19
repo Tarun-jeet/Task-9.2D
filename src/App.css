@@ -1,38 +1,314 @@
-.App {
+body{
+  background-color: 	#E8E8E8;
+}
+.Navbar{
+  overflow: hidden;
+  background-color: 	#B8B8B8;
+  height: auto;
+  
+}
+
+.Navbar button{ 
+  float: right;
+  display: block;
+  
+  color: rgb(0, 0, 0);
+  border: none;
+  background-color: transparent;
+  font-family:'Times New Roman', Times, serif;
+  padding: 14px 16px;
+  font-size: 18px;
+}
+
+.Navbar button:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+
+.Navbar span{
+  padding: 14px 16px;
+  float: left;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(81, 79, 79);
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+.Navbar input[type=text] {
+  width: 20%;
+  padding: 6px;
+  box-sizing: border-box;
+  align-content: center;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 14px;
+  
+}
+.Subscription {
+  overflow: hidden;
+  background-color: #B8B8B8;
+  font-family: 'Times New Roman', Times, serif;
+  height: auto;
+  padding: 10px 20px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.Subscription span {
+  color: rgb(81, 79, 79);
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.Subscription input[type="email"] {
+  width: 20%;
+  padding: 6px;
+  box-sizing: border-box;
+  border: none;
+  font-size: 14px;
+  margin-right: auto; 
+}
+
+.Subscription button {
+  color: rgb(0, 0, 0);
+  border: none;
+  background-color: transparent;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 14px 16px;
+  font-size: 18px;
+}
+
+.Subscription button:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+
+.Subscription .alert {
+  margin-left: 15px;
+  color: green;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+}
+
+
+.header {
+  padding: 20px 20px;
+  text-align: center;
+  color: rgb(11, 11, 11);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.headerImage{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.Array{
+  text-align: center;
+  
+}
+
+.card{
+  max-width: 400px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid rgb(212, 200, 200);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
+  display: inline-block;
+  background-color: #aaaaaa;
+}
+
+.card:hover{
+  transform: scale(1.1);
+  
+}
+
+.card .photo{
+  height: auto;
+  width: 60%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  
+}
+
+.card .head{
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.card .descrip{
+  text-align: justify;
+  /* to evoke the line limit display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;*/
+  color: rgb(69, 67, 69);
+  font-family:'Courier New', Courier, monospace
+}
+
+.card .rate{
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(0, 38, 70);
+  float: left;
+}
+
+.card .author{
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(0, 38, 70);
+  float: right;
+}
+
+.card2{
+  max-width: 400px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid rgb(212, 200, 200);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
+  display: inline-block;
+  background-color: #bbbbbb;
+}
+
+.card2:hover{
+  transform: scale(1.1);
+  
+}
+
+.card2 .photo{
+  height: auto;
+  width: 60%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  
+}
+
+.card2 .head{
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.card2 .descrip{
+  text-align: justify;
+  color: rgb(69, 67, 69);
+  font-family:'Courier New', Courier, monospace
+}
+
+.card2 .rate{
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(0, 38, 70);
+  float: left;
+}
+
+.card2 .author{
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(0, 38, 70);
+  float: right;
+}
+
+.button2{
+  border-radius:30px;
+  width: 300px;
+  height: 50px;
+  border: 1px solid rgb(70, 69, 69);
+  background-color: rgb(224, 215, 215);
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  
+}
+
+.button2:hover{
+  
+  color: black;
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.next{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+ 
+}
+
+.footer{
+  margin-top: 30px;
+  max-width:100%;
+  padding: 80px 15%;
+  background: #3C3D37;
+  color:#efefef;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} 
+
+.footer div{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fhead{
+font-weight: bolder;
+font-family: 'Courier New', Courier, monospace;
+margin-bottom: 30px;
+letter-spacing: 1px;
+} 
+
+.footer-column1 a{
+  display: block;
+  
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  color:#efefef;
+  margin-bottom: 10px ;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer-column2 a{
+  
+  display: block;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  color:#efefef;
+  margin-bottom: 10px ;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footer-column3 .photo{
+  width: 30px;
+  padding: 5px;
+  display: inline;
 }
 
-.App-link {
-  color: #61dafb;
+.bottom{
+  font-family: 'Courier New', Courier, monospace;
+  flex-flow: row;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bottom a{
+  display: inline;
+  padding: 40px;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  color:#efefef;
+  margin-bottom: 10px ;
+
 }
+

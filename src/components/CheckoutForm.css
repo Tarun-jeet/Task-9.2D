@@ -1,0 +1,89 @@
+/* General Styling */
+.checkout-form-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title for the form */
+  .checkout-form-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form elements */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form .StripeElement {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  form .StripeElement:focus {
+    border-color: #6c63ff;
+    outline: none;
+  }
+  
+  form input,
+  form button {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  form input:focus,
+  form button:focus {
+    outline: none;
+  }
+  
+  /* Button Styling */
+  form button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px;
+  }
+  
+  form button:disabled {
+    background-color: #b0a9f1;
+    cursor: not-allowed;
+  }
+  
+  form button:hover {
+    background-color: #5a54e6;
+  }
+  
+  /* Success & Error Messages */
+  .success-message, .error-message {
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .success-message {
+    background-color: #28a745;
+  }
+  
+  .error-message {
+    background-color: #dc3545;
+  }
+  
+  
