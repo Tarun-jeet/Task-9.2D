@@ -10,10 +10,10 @@ import Bottom from './components/Bottom';
 import Post from './PComponents/Post';
 import FindQuestion from './PComponents/FindQuestion';
 import PostNav from './routes/PostNav';
-import Plans from './components/Plan'; // Import Plans component
-import Payment from './components/Payment'; // Import Payment component
-import PaymentSuccess from './components/PaymentSuccess'; // Import PaymentSuccess component
-import PaymentFailed from './components/PaymentFailed'; // Import PaymentFailed component
+import Plans from './components/Plan'; 
+import Payment from './components/Payment'; 
+import PaymentSuccess from './components/PaymentSuccess'; 
+import PaymentFailed from './components/PaymentFailed'; 
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
       <Navbar title="DEV@Deakin" two="POST" one="LOG IN" place="Search..." />
 
       <Routes>
-        {/* Home route rendering all the necessary components */}
+        
         <Route 
           path="/" 
           element={
@@ -55,10 +55,8 @@ function App() {
           } 
         />
 
-        {/* Plans Page */}
         <Route path="/plans" element={<Plans />} />
 
-        {/* Payment Routes */}
         <Route path="/payment/:plan" element={<Payment />} />
         <Route path="/payment-success" element={<PaymentSuccess />} />
         <Route path="/payment-failed" element={<PaymentFailed />} />

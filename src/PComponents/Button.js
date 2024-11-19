@@ -1,4 +1,4 @@
-// src/components/Button.js
+
 import React from 'react';
 import './button.css'
 function Button({ text, onClick }) {

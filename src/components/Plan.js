@@ -12,14 +12,14 @@ function Plans() {
       <h2>Choose Your Plan</h2>
       <div className="plan-options">
         <div className="plan-card">
-          <img src={image} alt="Free Plan" className="plan-image" /> {/* Placeholder for image */}
+          <img src={image} alt="Free Plan" className="plan-image" /> 
           <h3>Free Plan</h3>
           <p>Access to basic features with no cost.</p>
           <button>Choose Free Plan</button>
         </div>
 
         <div className="plan-card">
-          <img src={image1} alt="$30 Plan" className="plan-image" /> {/* Placeholder for image */}
+          <img src={image1} alt="$30 Plan" className="plan-image" /> 
           <h3>$30 Plan</h3>
           <p>Access to more advanced features for $30 per month.</p>
           <Link to="/payment/$30">
@@ -28,7 +28,7 @@ function Plans() {
         </div>
 
         <div className="plan-card">
-          <img src={image2} alt="$100 Plan" className="plan-image" /> {/* Placeholder for image */}
+          <img src={image2} alt="$100 Plan" className="plan-image" /> 
           <h3>$100 Plan</h3>
           <p>Access to all features with premium support for $100 per month.</p>
           <Link to="/payment/$100">

@@ -1,4 +1,4 @@
-// src/components/Selector.js
+
 import React from 'react';
 
 function Selector({ options, selectedValue, onChange }) {

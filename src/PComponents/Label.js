@@ -1,4 +1,4 @@
-// src/components/Label.js
+
 import React from 'react';
 
 
