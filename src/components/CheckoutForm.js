@@ -1,59 +1,30 @@
-import React, { useState } from 'react';
-import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
+import React from 'react';
 import './CheckoutForm.css';
 
-function CheckoutForm({ plan, onSuccess, onError }) {
-  const stripe = useStripe();
-  const elements = useElements();
-  const [loading, setLoading] = useState(false);
+function CheckoutForm({ plan }) {
+  const handleRedirect = () => {
+    
+    const paymentLinks = {
+      basic: 'https://buy.stripe.com/test_basicPlanLink', 
+      premium: 'https://buy.stripe.com/test_7sI14WaZi52j7PabII', 
+    };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+    const paymentLink = paymentLinks[plan];
 
-    if (!stripe || !elements) return;
-
-    setLoading(true);
-
-    try {
-      
-      const response = await fetch('http://localhost:3001/create-payment-intent', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ plan }),
-      });
-      const { clientSecret } = await response.json();
-
-      // Confirm payment on the frontend
-      const { error, paymentIntent } = await stripe.confirmCardPayment(clientSecret, {
-        payment_method: {
-          card: elements.getElement(CardElement),
-        },
-      });
-
-      if (error) {
-        console.error("Payment failed:", error);
-        onError();
-      } else if (paymentIntent.status === 'succeeded') {
-        console.log("Payment succeeded!");
-        onSuccess();
-      }
-    } catch (err) {
-      console.error("Error processing payment:", err);
-      onError();
-    } finally {
-      setLoading(false);
+    if (paymentLink) {
+     
+      window.location.href = paymentLink;
+    } else {
+      alert('Invalid plan selected!');
     }
   };
 
   return (
     <div className="checkout-form-container">
-      <h2>Checkout - Pay for {plan}</h2>
-      <form onSubmit={handleSubmit}>
-        <CardElement />
-        <button type="submit" disabled={!stripe || loading}>
-          {loading ? 'Processing...' : `Pay for ${plan}`}
-        </button>
-      </form>
+      <h2>Checkout - Pay for {plan} Plan</h2>
+      <button onClick={handleRedirect}>
+        Pay for {plan}
+      </button>
     </div>
   );
 }

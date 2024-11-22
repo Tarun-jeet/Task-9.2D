@@ -6,7 +6,7 @@
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
     font-family: 'Arial', sans-serif;
   }
   
@@ -41,6 +41,7 @@
     padding: 12px;
     border-radius: 8px;
     font-size: 16px;
+    margin: auto;
   }
   
   form input:focus,
@@ -48,15 +49,17 @@
     outline: none;
   }
   
-  /* Button Styling */
   form button {
     background-color: #6c63ff;
     color: white;
     border: none;
     cursor: pointer;
+    margin: 0 auto;  /* This will center the button horizontally */
+    display: block;  /* Ensure it behaves like a block-level element */
     transition: background-color 0.3s;
     font-size: 18px;
   }
+  
   
   form button:disabled {
     background-color: #b0a9f1;

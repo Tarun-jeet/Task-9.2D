@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import image from '../images/free.jpg'
-import image1 from '../images/30.jpg'
-import image2 from '../images/100.jpg'
+import image from '../images/free.jpg';
+import image1 from '../images/30.jpg';
+import image2 from '../images/100.jpg';
 
 import './Plan.css';
 
@@ -23,16 +23,16 @@ function Plans() {
           <h3>$30 Plan</h3>
           <p>Access to more advanced features for $30 per month.</p>
           <Link to="/payment/$30">
-            <button>Choose Premium Plan</button>
+            <button>Subscribe</button>
           </Link>
         </div>
 
         <div className="plan-card">
           <img src={image2} alt="$100 Plan" className="plan-image" /> 
           <h3>$100 Plan</h3>
-          <p>Access to all features with premium support for $100 per month.</p>
+          <p>Access to all features with AI bot for $100 per month.</p>
           <Link to="/payment/$100">
-            <button>Choose $100 Plan</button>
+            <button>Subscribe</button>
           </Link>
         </div>
       </div>

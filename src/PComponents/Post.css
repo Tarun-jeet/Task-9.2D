@@ -61,7 +61,7 @@ textarea {
 }
 
 textarea {
-  resize: vertical;
+  resize: none;
 }
 
 .image-upload-container {
@@ -98,8 +98,23 @@ textarea {
   font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
+  max-width: 200px;
   transition: background-color 0.3s;
 }
+
+.button-2{
+  background-color: #000000;
+  color: #ddd;
+  cursor: pointer ;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+
+}
+
+.button-2:hover {
+  background-color: #5a5a5a;
+}
+
 .image1{
  
   color: black;
